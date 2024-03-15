@@ -54,6 +54,10 @@ iai = "0.1"
 insta = "1.34.0"
 mutants = "0.0.3"
 
+[dev-dependencies.rusqlite]
+version = "*" # The version is constrained by the normal dependency package
+features = ["extra_check"]
+
 [[bench]]
 name = "criterion"
 harness = false
